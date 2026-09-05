@@ -1,5 +1,5 @@
 :root {
-  --sj-primary: #2563eb;     
+  --sj-primary: #2563eb;    
   --sj-primary-dark: #1d4ed8;
   --sj-secondary: #64748b;    
   --sj-bg-light: #f8fafc;
@@ -12,8 +12,7 @@ body {
   font-family: var(--sj-font);
   color: #1e293b;
   background-color: #ffffff;
-}
-
+}]
 .btn-primary {
   background-color: var(--sj-primary);
   border-color: var(--sj-primary);
@@ -48,6 +47,7 @@ body {
 .nav-link:hover {
   color: var(--sj-primary) !important;
 }
+
 .hero-section {
   background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
 }
@@ -61,6 +61,77 @@ body {
 }
 .card {
   border: none;
+  border-radius: var(--sj-border-radius);
+  box-shadow: var(--sj-shadow);
+}
+.search-box {
+  background-color: #ffffff;
+  border-radius: var(--sj-border-radius);
+  box-shadow: var(--sj-shadow);
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+}
+.search-box .form-control,
+.search-box .input-group-text {
+  border-color: #e2e8f0;
+}
+.bg-light-section {
+  background-color: var(--sj-bg-light);
+}
+
+.category-card {
+  background-color: #ffffff;
+  border-radius: var(--sj-border-radius);
+  box-shadow: var(--sj-shadow);
+  transition: transform 0.15s ease;
+  cursor: pointer;
+}
+.category-card:hover {
+  transform: translateY(-4px);
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+}
+.type-badge {
+  background-color: #dbeafe;
+  color: var(--sj-primary-dark);
+  font-weight: 500;
+}
+.skill-badge {
+  background-color: var(--sj-bg-light);
+  color: var(--sj-secondary);
+  border: 1px solid #e2e8f0;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.status-applied { background-color: #dbeafe; color: #1d4ed8; }
+.status-review { background-color: #fef3c7; color: #b45309; }
+.status-shortlisted { background-color: #dcfce7; color: #15803d; }
+.status-rejected { background-color: #fee2e2; color: #b91c1c; }
+.status-selected { background-color: #dcfce7; color: #166534; }
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+}
+.footer-link {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.auth-card {
+  max-width: 460px;
+  margin: 0 auto;
+  border-radius: var(--sj-border-radius);
+  box-shadow: var(--sj-shadow);
+}
+
+.filter-card {
   border-radius: var(--sj-border-radius);
   box-shadow: var(--sj-shadow);
 }
