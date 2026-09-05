@@ -1,13 +1,7 @@
-/* =========================================================
-   SmartJobs — Core Design System
-   Keep this file as the single source of truth for colors,
-   spacing and typography so every page looks consistent.
-========================================================= */
-
 :root {
-  --sj-primary: #2563eb;      /* main brand blue */
+  --sj-primary: #2563eb;     
   --sj-primary-dark: #1d4ed8;
-  --sj-secondary: #64748b;    /* muted gray-blue for text */
+  --sj-secondary: #64748b;    
   --sj-bg-light: #f8fafc;
   --sj-border-radius: 10px;
   --sj-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
@@ -20,7 +14,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Override Bootstrap's default primary color with our brand blue */
 .btn-primary {
   background-color: var(--sj-primary);
   border-color: var(--sj-primary);
@@ -43,7 +36,6 @@ body {
   color: var(--sj-primary) !important;
 }
 
-/* ===================== NAVBAR ===================== */
 .navbar-brand {
   color: #1e293b;
 }
@@ -56,8 +48,6 @@ body {
 .nav-link:hover {
   color: var(--sj-primary) !important;
 }
-
-/* ===================== HERO ===================== */
 .hero-section {
   background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
 }
@@ -69,8 +59,6 @@ body {
   border-radius: 50%;
   background-color: #dbeafe;
 }
-
-/* ===================== SHARED CARD STYLE (used from Day 2 onward) ===================== */
 .card {
   border: none;
   border-radius: var(--sj-border-radius);
